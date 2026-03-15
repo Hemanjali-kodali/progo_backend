@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { useState, useEffect } from 'react';
 import Login from './pages/Login';
 import Chat from './pages/Chat';
+import { buildApiUrl } from './utils/api';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -20,7 +21,7 @@ function App() {
 
   const checkAuth = async () => {
     try {
-      const response = await fetch('/api/auth/session', {
+      const response = await fetch(buildApiUrl('/api/auth/session'), {
         credentials: 'include'
       });
       if (response.ok) {
@@ -40,7 +41,7 @@ function App() {
 
   const handleLogout = async () => {
     try {
-      await fetch('/api/auth/logout', {
+      await fetch(buildApiUrl('/api/auth/logout'), {
         method: 'POST',
         credentials: 'include'
       });

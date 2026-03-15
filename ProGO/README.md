@@ -290,6 +290,40 @@ server: {
 }
 ```
 
+**Frontend Environment** (`frontend/.env`):
+```env
+# Keep empty for local dev with Vite proxy
+VITE_API_BASE_URL=
+
+# Set this in production (Render static site)
+# VITE_API_BASE_URL=https://your-backend-service.onrender.com
+```
+
+## ☁️ Render Deployment
+
+This repository includes `render.yaml` to deploy:
+- `progo-backend` as a Render Web Service
+- `progo-frontend` as a Render Static Site
+
+### Deploy Steps
+
+1. Push your latest code to GitHub.
+2. In Render, create a new Blueprint and select this repo.
+3. Render will detect `render.yaml` and create both services.
+4. Set secrets in Render dashboard for backend:
+  - `MONGODB_URI`
+  - `EMAIL_USER`
+  - `EMAIL_PASS`
+  - `EMAIL_FROM`
+5. Update service URLs in `render.yaml` if you change service names.
+6. Deploy, then open the frontend Render URL.
+
+### Important Notes
+
+- Backend CORS supports comma-separated `CLIENT_URL` values.
+- Session cookies use `SameSite=None` and `Secure` in production for cross-domain auth.
+- Frontend uses `VITE_API_BASE_URL` for production API calls.
+
 **Tailwind Config** (`frontend/tailwind.config.js`):
 - Custom colors (primary, secondary)
 - Custom animations (fade-in, slide-up, gradient, float, glow)

@@ -14,6 +14,7 @@ import {
   Clock
 } from 'lucide-react';
 import AnimatedBackground from '../components/AnimatedBackground';
+import { buildApiUrl } from '../utils/api';
 
 const Login = ({ onLogin, theme, toggleTheme }) => {
   const [role, setRole] = useState('student');
@@ -57,7 +58,7 @@ const Login = ({ onLogin, theme, toggleTheme }) => {
     setForgotSuccess('');
 
     try {
-      const response = await fetch('/api/auth/forgot-password', {
+      const response = await fetch(buildApiUrl('/api/auth/forgot-password'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',
@@ -100,7 +101,7 @@ const Login = ({ onLogin, theme, toggleTheme }) => {
     setForgotSuccess('');
 
     try {
-      const response = await fetch('/api/auth/verify-otp', {
+      const response = await fetch(buildApiUrl('/api/auth/verify-otp'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',
@@ -153,7 +154,7 @@ const Login = ({ onLogin, theme, toggleTheme }) => {
     setForgotSuccess('');
 
     try {
-      const response = await fetch('/api/auth/reset-password', {
+      const response = await fetch(buildApiUrl('/api/auth/reset-password'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',
@@ -207,7 +208,7 @@ const Login = ({ onLogin, theme, toggleTheme }) => {
     // STUDENT LOGIN
     if (role === "student") {
 
-      const response = await fetch('/api/auth/login', {
+      const response = await fetch(buildApiUrl('/api/auth/login'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',
@@ -233,7 +234,7 @@ const Login = ({ onLogin, theme, toggleTheme }) => {
     else if (role === "parent") {
 
       // Step 1: verify registration number
-      const regResponse = await fetch('/api/auth/verify-registration', {
+      const regResponse = await fetch(buildApiUrl('/api/auth/verify-registration'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',
@@ -251,7 +252,7 @@ const Login = ({ onLogin, theme, toggleTheme }) => {
       }
 
       // Step 2: verify phone (password field used as phone)
-      const phoneResponse = await fetch('/api/auth/verify-phone', {
+      const phoneResponse = await fetch(buildApiUrl('/api/auth/verify-phone'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         credentials: 'include',

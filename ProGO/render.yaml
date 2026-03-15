@@ -1,0 +1,43 @@
+services:
+  - type: web
+    name: progo-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CLIENT_URL
+        value: https://progo-frontend.onrender.com
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: SESSION_TIMEOUT
+        value: 1800000
+      - key: MONGODB_URI
+        sync: false
+      - key: EMAIL_SERVICE
+        value: gmail
+      - key: EMAIL_USER
+        sync: false
+      - key: EMAIL_PASS
+        sync: false
+      - key: EMAIL_FROM
+        sync: false
+      - key: OTP_TTL_MINUTES
+        value: 5
+
+staticSites:
+  - name: progo-frontend
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    pullRequestPreviewsEnabled: false
+    envVars:
+      - key: VITE_API_BASE_URL
+        value: https://progo-backend.onrender.com
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
