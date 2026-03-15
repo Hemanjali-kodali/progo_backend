@@ -1,0 +1,333 @@
+{
+  "academic_performance": {
+    "successfulPhrases": [],
+    "commonQuestions": [
+      {
+        "message": "Show my academic performance",
+        "tokens": [
+          "show",
+          "my",
+          "academic",
+          "performance"
+        ],
+        "timestamp": "2026-03-14T09:19:01.784Z"
+      },
+      {
+        "message": "Show my academic performance",
+        "tokens": [
+          "show",
+          "my",
+          "academic",
+          "performance"
+        ],
+        "timestamp": "2026-03-14T09:19:26.046Z"
+      },
+      {
+        "message": "Show my academic performance",
+        "tokens": [
+          "show",
+          "my",
+          "academic",
+          "performance"
+        ],
+        "timestamp": "2026-03-15T03:46:06.370Z"
+      },
+      {
+        "message": "Show my academic performance",
+        "tokens": [
+          "show",
+          "my",
+          "academic",
+          "performance"
+        ],
+        "timestamp": "2026-03-15T03:46:19.257Z"
+      },
+      {
+        "message": "Show my academic performance",
+        "tokens": [
+          "show",
+          "my",
+          "academic",
+          "performance"
+        ],
+        "timestamp": "2026-03-15T03:47:02.878Z"
+      },
+      {
+        "message": "Show my academic performance",
+        "tokens": [
+          "show",
+          "my",
+          "academic",
+          "performance"
+        ],
+        "timestamp": "2026-03-15T03:47:04.703Z"
+      }
+    ],
+    "responseTemplates": []
+  },
+  "overall_attendance": {
+    "successfulPhrases": [],
+    "commonQuestions": [
+      {
+        "message": "What is my attendance?",
+        "tokens": [
+          "what",
+          "is",
+          "my",
+          "attendance"
+        ],
+        "timestamp": "2026-03-14T09:19:07.219Z"
+      },
+      {
+        "message": "What is my attendance?",
+        "tokens": [
+          "what",
+          "is",
+          "my",
+          "attendance"
+        ],
+        "timestamp": "2026-03-14T09:19:12.247Z"
+      },
+      {
+        "message": "What is my attendance?",
+        "tokens": [
+          "what",
+          "is",
+          "my",
+          "attendance"
+        ],
+        "timestamp": "2026-03-14T09:19:29.344Z"
+      },
+      {
+        "message": "What is my attendance?",
+        "tokens": [
+          "what",
+          "is",
+          "my",
+          "attendance"
+        ],
+        "timestamp": "2026-03-14T09:27:15.648Z"
+      },
+      {
+        "message": "What is my attendance?",
+        "tokens": [
+          "what",
+          "is",
+          "my",
+          "attendance"
+        ],
+        "timestamp": "2026-03-14T09:32:49.470Z"
+      },
+      {
+        "message": "What is my attendance?",
+        "tokens": [
+          "what",
+          "is",
+          "my",
+          "attendance"
+        ],
+        "timestamp": "2026-03-15T03:46:04.212Z"
+      },
+      {
+        "message": "What is my attendance?",
+        "tokens": [
+          "what",
+          "is",
+          "my",
+          "attendance"
+        ],
+        "timestamp": "2026-03-15T03:46:21.132Z"
+      },
+      {
+        "message": "What is my attendance?",
+        "tokens": [
+          "what",
+          "is",
+          "my",
+          "attendance"
+        ],
+        "timestamp": "2026-03-15T03:46:56.736Z"
+      },
+      {
+        "message": "What is my attendance?",
+        "tokens": [
+          "what",
+          "is",
+          "my",
+          "attendance"
+        ],
+        "timestamp": "2026-03-15T03:55:19.687Z"
+      },
+      {
+        "message": "What is my attendance?",
+        "tokens": [
+          "what",
+          "is",
+          "my",
+          "attendance"
+        ],
+        "timestamp": "2026-03-15T03:58:11.101Z"
+      }
+    ],
+    "responseTemplates": []
+  },
+  "upcoming_exams": {
+    "successfulPhrases": [],
+    "commonQuestions": [
+      {
+        "message": "Show upcoming exams",
+        "tokens": [
+          "show",
+          "upcoming",
+          "exams"
+        ],
+        "timestamp": "2026-03-14T09:19:13.864Z"
+      },
+      {
+        "message": "Show upcoming exams",
+        "tokens": [
+          "show",
+          "upcoming",
+          "exams"
+        ],
+        "timestamp": "2026-03-15T03:46:17.286Z"
+      }
+    ],
+    "responseTemplates": []
+  },
+  "fee_status": {
+    "successfulPhrases": [],
+    "commonQuestions": [
+      {
+        "message": "What is my fee status?",
+        "tokens": [
+          "what",
+          "is",
+          "my",
+          "fee",
+          "status"
+        ],
+        "timestamp": "2026-03-14T09:19:16.693Z"
+      },
+      {
+        "message": "What is my fee status?",
+        "tokens": [
+          "what",
+          "is",
+          "my",
+          "fee",
+          "status"
+        ],
+        "timestamp": "2026-03-15T03:45:59.165Z"
+      },
+      {
+        "message": "What is my fee status?",
+        "tokens": [
+          "what",
+          "is",
+          "my",
+          "fee",
+          "status"
+        ],
+        "timestamp": "2026-03-15T03:46:09.346Z"
+      },
+      {
+        "message": "What is my fee status?",
+        "tokens": [
+          "what",
+          "is",
+          "my",
+          "fee",
+          "status"
+        ],
+        "timestamp": "2026-03-15T03:46:14.906Z"
+      },
+      {
+        "message": "What is my fee status?",
+        "tokens": [
+          "what",
+          "is",
+          "my",
+          "fee",
+          "status"
+        ],
+        "timestamp": "2026-03-15T03:47:06.191Z"
+      },
+      {
+        "message": "What is my fee status?",
+        "tokens": [
+          "what",
+          "is",
+          "my",
+          "fee",
+          "status"
+        ],
+        "timestamp": "2026-03-15T03:55:25.360Z"
+      },
+      {
+        "message": "What is my fee status?",
+        "tokens": [
+          "what",
+          "is",
+          "my",
+          "fee",
+          "status"
+        ],
+        "timestamp": "2026-03-15T03:58:15.141Z"
+      }
+    ],
+    "responseTemplates": []
+  },
+  "notifications": {
+    "successfulPhrases": [],
+    "commonQuestions": [
+      {
+        "message": "Show notifications",
+        "tokens": [
+          "show",
+          "notifications"
+        ],
+        "timestamp": "2026-03-14T09:19:19.961Z"
+      },
+      {
+        "message": "Show notifications",
+        "tokens": [
+          "show",
+          "notifications"
+        ],
+        "timestamp": "2026-03-15T03:46:11.643Z"
+      },
+      {
+        "message": "Show notifications",
+        "tokens": [
+          "show",
+          "notifications"
+        ],
+        "timestamp": "2026-03-15T03:47:07.299Z"
+      },
+      {
+        "message": "Show notifications",
+        "tokens": [
+          "show",
+          "notifications"
+        ],
+        "timestamp": "2026-03-15T03:58:41.270Z"
+      }
+    ],
+    "responseTemplates": []
+  },
+  "faculty_contact": {
+    "successfulPhrases": [],
+    "commonQuestions": [
+      {
+        "message": "faculty info",
+        "tokens": [
+          "faculty",
+          "info"
+        ],
+        "timestamp": "2026-03-15T03:49:50.196Z"
+      }
+    ],
+    "responseTemplates": []
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "name": "parent-student-chatbot",
+  "version": "1.0.0",
+  "description": "Parent Verification & Student Information Chatbot System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "email:update": "node updateEmails.js",
+    "email:update:bulk": "node bulkUpdateEmails.js",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && cd frontend && npm install",
+    "dev-all": "concurrently \"npm run dev\" \"npm run client\"",
+    "seed": "node seedDatabase.js",
+    "ml:train": "node backend/ml/trainModels.js all",
+    "ml:train:intent": "node backend/ml/trainModels.js intent",
+    "ml:train:performance": "node backend/ml/trainModels.js performance",
+    "ml:test": "node backend/ml/trainModels.js test",
+    "ml:stats": "node backend/ml/trainModels.js stats",
+    "ml:retrain": "node backend/ml/trainModels.js retrain",
+    "ml:pipeline": "node backend/ml/trainModels.js pipeline",
+    "ml:python:check": "python backend/ml/python/check_dependencies.py",
+    "ml:python:install": "pip install -r backend/ml/python/requirements.txt",
+    "ml:python:train": "python backend/ml/python/train.py train",
+    "ml:python:train:large": "python backend/ml/python/train.py train 5000",
+    "ml:python:test": "python backend/ml/python/train.py test",
+    "setup": "npm install && npm run ml:train && npm run seed",
+    "setup:python": "npm install && npm run ml:python:install && npm run ml:python:train && npm run seed"
+  },
+  "keywords": [
+    "chatbot",
+    "education",
+    "parent-portal",
+    "academic"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "brain.js": "^2.0.0-beta.23",
+    "compromise": "^14.9.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "morgan": "^1.10.0",
+    "natural": "^6.7.0",
+    "sentiment": "^5.0.2",
+    "synaptic": "^1.1.4"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1"
+  }
+}

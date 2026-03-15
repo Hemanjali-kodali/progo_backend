@@ -1,0 +1,312 @@
+[
+  {
+    "sessionId": "DA58F7zeWrzaRp3dz9rTD5HwKrn970DR",
+    "userMessage": "Show my academic performance",
+    "botResponse": "Academic Performance:\n\nCurrent CGPA: 8.20\nSemester: 4\nYear: 2\n\nSemester-wise Performance:\nSemester 1: 58.33%\nSemester 2: 60.67%\nSemester 3: 62.53%\nSemester 4: 56.27%\n Let me know if you need anything else.",
+    "intent": "academic_performance",
+    "confidence": 0.8,
+    "timestamp": "2026-03-14T09:19:01.784Z",
+    "sentiment": "neutral",
+    "studentId": "69b527dc8b6a329af5d8a95f",
+    "studentName": "Arjun"
+  },
+  {
+    "sessionId": "DA58F7zeWrzaRp3dz9rTD5HwKrn970DR",
+    "userMessage": "What is my attendance?",
+    "botResponse": "Overall Attendance: 0%\n⚠ Critical: Attendance is below 65%. Risk of detention. Let me know if you need anything else.",
+    "intent": "overall_attendance",
+    "confidence": 0.8,
+    "timestamp": "2026-03-14T09:19:07.219Z",
+    "sentiment": "neutral",
+    "studentId": "69b527dc8b6a329af5d8a95f",
+    "studentName": "Arjun"
+  },
+  {
+    "sessionId": "DA58F7zeWrzaRp3dz9rTD5HwKrn970DR",
+    "userMessage": "What is my attendance?",
+    "botResponse": "Overall Attendance: 0%\n⚠ Critical: Attendance is below 65%. Risk of detention.",
+    "intent": "overall_attendance",
+    "confidence": 0.8,
+    "timestamp": "2026-03-14T09:19:12.246Z",
+    "sentiment": "neutral",
+    "studentId": "69b527dc8b6a329af5d8a95f",
+    "studentName": "Arjun"
+  },
+  {
+    "sessionId": "DA58F7zeWrzaRp3dz9rTD5HwKrn970DR",
+    "userMessage": "Show upcoming exams",
+    "botResponse": "Okay. No upcoming exams scheduled.",
+    "intent": "upcoming_exams",
+    "confidence": 0.8,
+    "timestamp": "2026-03-14T09:19:13.863Z",
+    "sentiment": "neutral",
+    "studentId": "69b527dc8b6a329af5d8a95f",
+    "studentName": "Arjun"
+  },
+  {
+    "sessionId": "DA58F7zeWrzaRp3dz9rTD5HwKrn970DR",
+    "userMessage": "What is my fee status?",
+    "botResponse": "Fee Payment Status:\n\nTotal Fee: ₹55000\nPaid: ₹55000\nPending: ₹0\n\ntuition: ✓ Paid (₹50000)\nlibrary: ✓ Paid (₹5000)\n",
+    "intent": "fee_status",
+    "confidence": 0.8,
+    "timestamp": "2026-03-14T09:19:16.693Z",
+    "sentiment": "neutral",
+    "studentId": "69b527dc8b6a329af5d8a95f",
+    "studentName": "Arjun"
+  },
+  {
+    "sessionId": "DA58F7zeWrzaRp3dz9rTD5HwKrn970DR",
+    "userMessage": "Show notifications",
+    "botResponse": "Okay. Latest Notifications:\n\n1. Holiday Announcement\n   College will remain closed on March 15, 2026 due to national holiday.\n   Date: 14/3/2026\n\n2. Exam Schedule Released\n   End semester examination schedule has been released. Check your portal for details.\n   Date: 14/3/2026\n\n3. Technical Workshop\n   Workshop on Machine Learning will be conducted on March 20, 2026. Register now!\n   Date: 14/3/2026\n\n4. Fee Payment Reminder\n   Semester fee payment last date is March 31, 2026. Please clear dues.\n   Date: 14/3/2026\n\n",
+    "intent": "notifications",
+    "confidence": 0.8,
+    "timestamp": "2026-03-14T09:19:19.961Z",
+    "sentiment": "neutral",
+    "studentId": "69b527dc8b6a329af5d8a95f",
+    "studentName": "Arjun"
+  },
+  {
+    "sessionId": "DA58F7zeWrzaRp3dz9rTD5HwKrn970DR",
+    "userMessage": "Show my academic performance",
+    "botResponse": "Sure. Academic Performance:\n\nCurrent CGPA: 8.20\nSemester: 4\nYear: 2\n\nSemester-wise Performance:\nSemester 1: 58.33%\nSemester 2: 60.67%\nSemester 3: 62.53%\nSemester 4: 56.27%\n",
+    "intent": "academic_performance",
+    "confidence": 0.8,
+    "timestamp": "2026-03-14T09:19:26.046Z",
+    "sentiment": "neutral",
+    "studentId": "69b527dc8b6a329af5d8a95f",
+    "studentName": "Arjun"
+  },
+  {
+    "sessionId": "DA58F7zeWrzaRp3dz9rTD5HwKrn970DR",
+    "userMessage": "What is my attendance?",
+    "botResponse": "Okay. Overall Attendance: 0%\n⚠ Critical: Attendance is below 65%. Risk of detention.",
+    "intent": "overall_attendance",
+    "confidence": 0.8,
+    "timestamp": "2026-03-14T09:19:29.344Z",
+    "sentiment": "neutral",
+    "studentId": "69b527dc8b6a329af5d8a95f",
+    "studentName": "Arjun"
+  },
+  {
+    "sessionId": "DA58F7zeWrzaRp3dz9rTD5HwKrn970DR",
+    "userMessage": "What is my attendance?",
+    "botResponse": "Okay. Overall Attendance: 0%\n⚠ Critical: Attendance is below 65%. Risk of detention. Let me know if you need anything else.",
+    "intent": "overall_attendance",
+    "confidence": 0.8,
+    "timestamp": "2026-03-14T09:27:15.648Z",
+    "sentiment": "neutral",
+    "studentId": "69b527dc8b6a329af5d8a95f",
+    "studentName": "Arjun"
+  },
+  {
+    "sessionId": "DA58F7zeWrzaRp3dz9rTD5HwKrn970DR",
+    "userMessage": "What is my attendance?",
+    "botResponse": "Okay. Overall Attendance: 0%\n⚠ Critical: Attendance is below 65%. Risk of detention.",
+    "intent": "overall_attendance",
+    "confidence": 0.8,
+    "timestamp": "2026-03-14T09:32:49.469Z",
+    "sentiment": "neutral",
+    "studentId": "69b527dc8b6a329af5d8a95f",
+    "studentName": "Arjun"
+  },
+  {
+    "sessionId": "4kA3qt15wt7EO5DIwG8Www3806zwE4_I",
+    "userMessage": "What is my fee status?",
+    "botResponse": "Sure. Fee Payment Status:\n\nTotal Fee: ₹55000\nPaid: ₹30000\nPending: ₹25000\n\nlibrary: ✓ Paid (₹5000)\ntuition: ✗ Pending (₹50000)\n\n⚠ Please clear pending fees. Let me know if you need anything else.",
+    "intent": "fee_status",
+    "confidence": 0,
+    "timestamp": "2026-03-15T03:45:59.165Z",
+    "studentId": "69b527dc8b6a329af5d8a960",
+    "studentName": "Priya"
+  },
+  {
+    "sessionId": "4kA3qt15wt7EO5DIwG8Www3806zwE4_I",
+    "userMessage": "What is my attendance?",
+    "botResponse": "Okay. 📊 Overall Attendance: 80.00%\n\nGood attendance.\n\n📚 Subject-wise Attendance:\n\nData Structures and Algorithms: 100.00% (1/1)\nOperating Systems: 100.00% (1/1)\nDatabase Management Systems: 100.00% (1/1)\nComputer Networks: 100.00% (1/1)\nSoftware Engineering: 0.00% (0/1)\n Let me know if you need anything else.",
+    "intent": "overall_attendance",
+    "confidence": 0,
+    "timestamp": "2026-03-15T03:46:04.212Z",
+    "studentId": "69b527dc8b6a329af5d8a960",
+    "studentName": "Priya"
+  },
+  {
+    "sessionId": "4kA3qt15wt7EO5DIwG8Www3806zwE4_I",
+    "userMessage": "Show my academic performance",
+    "botResponse": "Academic Performance:\n\nCurrent CGPA: 8.70\nSemester: 4\nYear: 2\n\nSemester-wise Performance:\nSemester 1: 62.73%\nSemester 2: 56.73%\nSemester 3: 53.27%\nSemester 4: 63.53%\n",
+    "intent": "academic_performance",
+    "confidence": 0,
+    "timestamp": "2026-03-15T03:46:06.370Z",
+    "studentId": "69b527dc8b6a329af5d8a960",
+    "studentName": "Priya"
+  },
+  {
+    "sessionId": "4kA3qt15wt7EO5DIwG8Www3806zwE4_I",
+    "userMessage": "What is my fee status?",
+    "botResponse": "Sure. Fee Payment Status:\n\nTotal Fee: ₹55000\nPaid: ₹30000\nPending: ₹25000\n\nlibrary: ✓ Paid (₹5000)\ntuition: ✗ Pending (₹50000)\n\n⚠ Please clear pending fees.",
+    "intent": "fee_status",
+    "confidence": 0,
+    "timestamp": "2026-03-15T03:46:09.346Z",
+    "studentId": "69b527dc8b6a329af5d8a960",
+    "studentName": "Priya"
+  },
+  {
+    "sessionId": "4kA3qt15wt7EO5DIwG8Www3806zwE4_I",
+    "userMessage": "Show notifications",
+    "botResponse": "Sure. Latest Notifications:\n\n1. Holiday Announcement\n   College will remain closed on March 15, 2026 due to national holiday.\n   Date: 14/3/2026\n\n2. Exam Schedule Released\n   End semester examination schedule has been released. Check your portal for details.\n   Date: 14/3/2026\n\n3. Technical Workshop\n   Workshop on Machine Learning will be conducted on March 20, 2026. Register now!\n   Date: 14/3/2026\n\n4. Fee Payment Reminder\n   Semester fee payment last date is March 31, 2026. Please clear dues.\n   Date: 14/3/2026\n\n",
+    "intent": "notifications",
+    "confidence": 0,
+    "timestamp": "2026-03-15T03:46:11.643Z",
+    "studentId": "69b527dc8b6a329af5d8a960",
+    "studentName": "Priya"
+  },
+  {
+    "sessionId": "4kA3qt15wt7EO5DIwG8Www3806zwE4_I",
+    "userMessage": "What is my fee status?",
+    "botResponse": "Fee Payment Status:\n\nTotal Fee: ₹55000\nPaid: ₹30000\nPending: ₹25000\n\nlibrary: ✓ Paid (₹5000)\ntuition: ✗ Pending (₹50000)\n\n⚠ Please clear pending fees. Let me know if you need anything else.",
+    "intent": "fee_status",
+    "confidence": 0,
+    "timestamp": "2026-03-15T03:46:14.906Z",
+    "studentId": "69b527dc8b6a329af5d8a960",
+    "studentName": "Priya"
+  },
+  {
+    "sessionId": "4kA3qt15wt7EO5DIwG8Www3806zwE4_I",
+    "userMessage": "Show upcoming exams",
+    "botResponse": "No upcoming exams scheduled. Let me know if you need anything else.",
+    "intent": "upcoming_exams",
+    "confidence": 0,
+    "timestamp": "2026-03-15T03:46:17.286Z",
+    "studentId": "69b527dc8b6a329af5d8a960",
+    "studentName": "Priya"
+  },
+  {
+    "sessionId": "4kA3qt15wt7EO5DIwG8Www3806zwE4_I",
+    "userMessage": "Show my academic performance",
+    "botResponse": "Okay. Academic Performance:\n\nCurrent CGPA: 8.70\nSemester: 4\nYear: 2\n\nSemester-wise Performance:\nSemester 1: 62.73%\nSemester 2: 56.73%\nSemester 3: 53.27%\nSemester 4: 63.53%\n Let me know if you need anything else.",
+    "intent": "academic_performance",
+    "confidence": 0,
+    "timestamp": "2026-03-15T03:46:19.257Z",
+    "studentId": "69b527dc8b6a329af5d8a960",
+    "studentName": "Priya"
+  },
+  {
+    "sessionId": "4kA3qt15wt7EO5DIwG8Www3806zwE4_I",
+    "userMessage": "What is my attendance?",
+    "botResponse": "Okay. 📊 Overall Attendance: 80.00%\n\nGood attendance.\n\n📚 Subject-wise Attendance:\n\nData Structures and Algorithms: 100.00% (1/1)\nOperating Systems: 100.00% (1/1)\nDatabase Management Systems: 100.00% (1/1)\nComputer Networks: 100.00% (1/1)\nSoftware Engineering: 0.00% (0/1)\n",
+    "intent": "overall_attendance",
+    "confidence": 0,
+    "timestamp": "2026-03-15T03:46:21.132Z",
+    "studentId": "69b527dc8b6a329af5d8a960",
+    "studentName": "Priya"
+  },
+  {
+    "sessionId": "PeAcnS54Sz0KkxoGsxb5LrxVbZRZzW6a",
+    "userMessage": "What is my attendance?",
+    "botResponse": "Okay. 📊 Overall Attendance: 80.00%\n\nGood attendance.\n\n📚 Subject-wise Attendance:\n\nData Structures and Algorithms: 0.00% (0/1)\nOperating Systems: 100.00% (1/1)\nDatabase Management Systems: 100.00% (1/1)\nComputer Networks: 100.00% (1/1)\nSoftware Engineering: 100.00% (1/1)\n",
+    "intent": "overall_attendance",
+    "confidence": 0,
+    "timestamp": "2026-03-15T03:46:56.736Z",
+    "studentId": "69b527dc8b6a329af5d8a961",
+    "studentName": "Vikram"
+  },
+  {
+    "sessionId": "PeAcnS54Sz0KkxoGsxb5LrxVbZRZzW6a",
+    "userMessage": "Show my academic performance",
+    "botResponse": "Academic Performance:\n\nCurrent CGPA: 7.50\nSemester: 6\nYear: 3\n\nSemester-wise Performance:\nSemester 1: 59.47%\nSemester 2: 55.80%\nSemester 3: 57.87%\nSemester 4: 56.93%\nSemester 5: 57.53%\nSemester 6: 62.73%\n Let me know if you need anything else.",
+    "intent": "academic_performance",
+    "confidence": 0,
+    "timestamp": "2026-03-15T03:47:02.878Z",
+    "studentId": "69b527dc8b6a329af5d8a961",
+    "studentName": "Vikram"
+  },
+  {
+    "sessionId": "PeAcnS54Sz0KkxoGsxb5LrxVbZRZzW6a",
+    "userMessage": "Show my academic performance",
+    "botResponse": "Sure. Academic Performance:\n\nCurrent CGPA: 7.50\nSemester: 6\nYear: 3\n\nSemester-wise Performance:\nSemester 1: 59.47%\nSemester 2: 55.80%\nSemester 3: 57.87%\nSemester 4: 56.93%\nSemester 5: 57.53%\nSemester 6: 62.73%\n Let me know if you need anything else.",
+    "intent": "academic_performance",
+    "confidence": 0,
+    "timestamp": "2026-03-15T03:47:04.703Z",
+    "studentId": "69b527dc8b6a329af5d8a961",
+    "studentName": "Vikram"
+  },
+  {
+    "sessionId": "PeAcnS54Sz0KkxoGsxb5LrxVbZRZzW6a",
+    "userMessage": "What is my fee status?",
+    "botResponse": "Fee Payment Status:\n\nTotal Fee: ₹55000\nPaid: ₹25000\nPending: ₹30000\n\ntuition: ✗ Pending (₹50000)\nlibrary: ✗ Pending (₹5000)\n\n⚠ Please clear pending fees.",
+    "intent": "fee_status",
+    "confidence": 0,
+    "timestamp": "2026-03-15T03:47:06.191Z",
+    "studentId": "69b527dc8b6a329af5d8a961",
+    "studentName": "Vikram"
+  },
+  {
+    "sessionId": "PeAcnS54Sz0KkxoGsxb5LrxVbZRZzW6a",
+    "userMessage": "Show notifications",
+    "botResponse": "Sure. Latest Notifications:\n\n1. Holiday Announcement\n   College will remain closed on March 15, 2026 due to national holiday.\n   Date: 14/3/2026\n\n2. Exam Schedule Released\n   End semester examination schedule has been released. Check your portal for details.\n   Date: 14/3/2026\n\n3. Technical Workshop\n   Workshop on Machine Learning will be conducted on March 20, 2026. Register now!\n   Date: 14/3/2026\n\n4. Fee Payment Reminder\n   Semester fee payment last date is March 31, 2026. Please clear dues.\n   Date: 14/3/2026\n\n",
+    "intent": "notifications",
+    "confidence": 0,
+    "timestamp": "2026-03-15T03:47:07.299Z",
+    "studentId": "69b527dc8b6a329af5d8a961",
+    "studentName": "Vikram"
+  },
+  {
+    "sessionId": "PeAcnS54Sz0KkxoGsxb5LrxVbZRZzW6a",
+    "userMessage": "faculty info",
+    "botResponse": "Okay. Faculty Contact Information:\n\nDr. Ramesh Kumar\nPosition: Faculty\nEmail: ramesh.kumar@college.edu\nPhone: 9876543210\n\nDr. Priya Sharma\nPosition: Faculty\nEmail: priya.sharma@college.edu\nPhone: 9876543211\n\nProf. Amit Patel\nPosition: Faculty\nEmail: amit.patel@college.edu\nPhone: 9876543212\n\n",
+    "intent": "faculty_contact",
+    "confidence": 0,
+    "timestamp": "2026-03-15T03:49:50.196Z",
+    "studentId": "69b527dc8b6a329af5d8a961",
+    "studentName": "Vikram"
+  },
+  {
+    "sessionId": "ZFxU9Vdghc9vY0AKwqrfImlkwb8ohGXa",
+    "userMessage": "What is my attendance?",
+    "botResponse": "Sure. 📊 Overall Attendance: 80.00%\n\nGood attendance.\n\n📚 Subject-wise Attendance:\n\nData Structures and Algorithms: 0.00% (0/1)\nOperating Systems: 100.00% (1/1)\nDatabase Management Systems: 100.00% (1/1)\nComputer Networks: 100.00% (1/1)\nSoftware Engineering: 100.00% (1/1)\n Let me know if you need anything else.",
+    "intent": "overall_attendance",
+    "confidence": 0,
+    "timestamp": "2026-03-15T03:55:19.687Z",
+    "studentId": "69b527dc8b6a329af5d8a961",
+    "studentName": "Vikram"
+  },
+  {
+    "sessionId": "ZFxU9Vdghc9vY0AKwqrfImlkwb8ohGXa",
+    "userMessage": "What is my fee status?",
+    "botResponse": "Fee Payment Status:\n\nTotal Fee: ₹55000\nPaid: ₹25000\nPending: ₹30000\n\ntuition: ✗ Pending (₹50000)\nlibrary: ✗ Pending (₹5000)\n\n⚠ Please clear pending fees.",
+    "intent": "fee_status",
+    "confidence": 0,
+    "timestamp": "2026-03-15T03:55:25.360Z",
+    "studentId": "69b527dc8b6a329af5d8a961",
+    "studentName": "Vikram"
+  },
+  {
+    "sessionId": "H4BwKhCd1NtTkfjBoX71nZWfTV01PZJ-",
+    "userMessage": "What is my attendance?",
+    "botResponse": "Sure. 📊 Overall Attendance: 80.00%\n\nGood attendance.\n\n📚 Subject-wise Attendance:\n\nData Structures and Algorithms: 0.00% (0/1)\nOperating Systems: 100.00% (1/1)\nDatabase Management Systems: 100.00% (1/1)\nComputer Networks: 100.00% (1/1)\nSoftware Engineering: 100.00% (1/1)\n",
+    "intent": "overall_attendance",
+    "confidence": 0,
+    "timestamp": "2026-03-15T03:58:11.101Z",
+    "studentId": "69b527dc8b6a329af5d8a961",
+    "studentName": "Vikram"
+  },
+  {
+    "sessionId": "H4BwKhCd1NtTkfjBoX71nZWfTV01PZJ-",
+    "userMessage": "What is my fee status?",
+    "botResponse": "Okay. Fee Payment Status:\n\nTotal Fee: ₹55000\nPaid: ₹25000\nPending: ₹30000\n\ntuition: ✗ Pending (₹50000)\nlibrary: ✗ Pending (₹5000)\n\n⚠ Please clear pending fees.",
+    "intent": "fee_status",
+    "confidence": 0,
+    "timestamp": "2026-03-15T03:58:15.141Z",
+    "studentId": "69b527dc8b6a329af5d8a961",
+    "studentName": "Vikram"
+  },
+  {
+    "sessionId": "qGml0fd0w9kRweYH7NheW1BkqMtReoKI",
+    "userMessage": "Show notifications",
+    "botResponse": "Sure. Latest Notifications:\n\n1. Holiday Announcement\n   College will remain closed on March 15, 2026 due to national holiday.\n   Date: 14/3/2026\n\n2. Exam Schedule Released\n   End semester examination schedule has been released. Check your portal for details.\n   Date: 14/3/2026\n\n3. Technical Workshop\n   Workshop on Machine Learning will be conducted on March 20, 2026. Register now!\n   Date: 14/3/2026\n\n4. Fee Payment Reminder\n   Semester fee payment last date is March 31, 2026. Please clear dues.\n   Date: 14/3/2026\n\n",
+    "intent": "notifications",
+    "confidence": 0,
+    "timestamp": "2026-03-15T03:58:41.270Z",
+    "studentId": "69b527dc8b6a329af5d8a961",
+    "studentName": "Vikram"
+  }
+]

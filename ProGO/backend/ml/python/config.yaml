@@ -1,0 +1,53 @@
+# ML Configuration
+models:
+  intent_classifier:
+    type: "random_forest"  # Options: random_forest, svm, neural_network
+    max_features: 1000
+    min_confidence: 0.6
+    model_path: "models/intent_classifier.pkl"
+    vectorizer_path: "models/intent_vectorizer.pkl"
+    
+  performance_predictor:
+    type: "neural_network"  # Options: linear_regression, random_forest, neural_network, xgboost
+    model_path: "models/performance_predictor.h5"
+    scaler_path: "models/performance_scaler.pkl"
+    feature_scaler_path: "models/feature_scaler.pkl"
+
+# Training Parameters
+training:
+  intent_classifier:
+    test_size: 0.2
+    random_state: 42
+    n_estimators: 100
+    max_depth: 50
+    min_samples_split: 2
+    
+  performance_predictor:
+    epochs: 100
+    batch_size: 32
+    validation_split: 0.2
+    learning_rate: 0.001
+    early_stopping_patience: 10
+
+# Feature Engineering
+features:
+  performance:
+    # Derived features to create
+    - "attendance_category"  # Low/Medium/High
+    - "marks_trend"  # Declining/Stable/Improving
+    - "risk_score"  # Composite risk indicator
+    - "engagement_score"  # Study hours + attendance
+    - "semester_progress"  # Normalized semester number
+    
+# NLP Settings
+nlp:
+  language: "en"
+  spacy_model: "en_core_web_sm"
+  max_sequence_length: 100
+  embedding_dim: 100
+  
+# Data Paths
+data:
+  conversations: "data/conversations.json"
+  training_data: "data/training_data.json"
+  performance_data: "data/performance_data.json"
