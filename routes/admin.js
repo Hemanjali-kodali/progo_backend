@@ -162,4 +162,35 @@ router.get('/analytics', adminAuth, async (req, res) => {
   }
 });
 
+// List all students (with phone numbers)
+router.get('/students', adminAuth, async (req, res) => {
+  try {
+    const students = await Student.find({}, 'registrationNumber firstName lastName phone email').lean();
+    res.json({ success: true, data: students });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+});
+
+// Update student phone number
+router.patch('/students/:registrationNumber/phone', adminAuth, async (req, res) => {
+  try {
+    const { phone } = req.body;
+    if (!phone) {
+      return res.status(400).json({ success: false, message: 'phone is required' });
+    }
+    const student = await Student.findOneAndUpdate(
+      { registrationNumber: req.params.registrationNumber },
+      { phone },
+      { new: true }
+    );
+    if (!student) {
+      return res.status(404).json({ success: false, message: 'Student not found' });
+    }
+    res.json({ success: true, data: { registrationNumber: student.registrationNumber, phone: student.phone } });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+});
+
 module.exports = router;
