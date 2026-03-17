@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const chatbotController = require('../controllers/chatbotController');
+const transcriptionService = require('../services/transcriptionService');
 const whatsappService = require('../services/whatsappService');
 
 router.get('/status', (req, res) => {
@@ -32,8 +33,27 @@ router.post('/webhook', async (req, res) => {
     const incomingMessages = whatsappService.extractMessages(req.body);
 
     for (const incomingMessage of incomingMessages) {
-      const messageText = whatsappService.getMessageText(incomingMessage);
+      let messageText = whatsappService.getMessageText(incomingMessage);
+
+      if (!messageText && whatsappService.isAudioMessage(incomingMessage)) {
+        try {
+          const audioFile = await whatsappService.downloadAudioMedia(incomingMessage.audio.id);
+          messageText = await transcriptionService.transcribeAudio(audioFile);
+        } catch (error) {
+          console.error('WhatsApp audio transcription failed:', error.message);
+          await whatsappService.sendTextMessage(
+            incomingMessage.from,
+            whatsappService.getUnsupportedMessageReply(incomingMessage)
+          );
+          continue;
+        }
+      }
+
       if (!messageText) {
+        await whatsappService.sendTextMessage(
+          incomingMessage.from,
+          whatsappService.getUnsupportedMessageReply(incomingMessage)
+        );
         continue;
       }
 

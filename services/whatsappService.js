@@ -1,5 +1,16 @@
 const DEFAULT_GRAPH_API_VERSION = process.env.WHATSAPP_GRAPH_API_VERSION || 'v21.0';
 
+const MIME_TYPE_EXTENSIONS = {
+  'audio/aac': 'aac',
+  'audio/amr': 'amr',
+  'audio/m4a': 'm4a',
+  'audio/mp4': 'mp4',
+  'audio/mpeg': 'mp3',
+  'audio/ogg': 'ogg',
+  'audio/opus': 'opus',
+  'audio/wav': 'wav'
+};
+
 class WhatsAppService {
   isConfigured() {
     return Boolean(process.env.WHATSAPP_ACCESS_TOKEN && process.env.WHATSAPP_PHONE_NUMBER_ID);
@@ -10,12 +21,19 @@ class WhatsAppService {
       hasAccessToken: Boolean(process.env.WHATSAPP_ACCESS_TOKEN),
       hasPhoneNumberId: Boolean(process.env.WHATSAPP_PHONE_NUMBER_ID),
       hasVerifyToken: Boolean(process.env.WHATSAPP_VERIFY_TOKEN),
+      hasOpenAiApiKey: Boolean(process.env.OPENAI_API_KEY),
       graphApiVersion: DEFAULT_GRAPH_API_VERSION,
       webhookPath: '/api/whatsapp/webhook',
       ready: Boolean(
         process.env.WHATSAPP_ACCESS_TOKEN
         && process.env.WHATSAPP_PHONE_NUMBER_ID
         && process.env.WHATSAPP_VERIFY_TOKEN
+      ),
+      voiceReady: Boolean(
+        process.env.WHATSAPP_ACCESS_TOKEN
+        && process.env.WHATSAPP_PHONE_NUMBER_ID
+        && process.env.WHATSAPP_VERIFY_TOKEN
+        && process.env.OPENAI_API_KEY
       )
     };
   }
@@ -54,6 +72,60 @@ class WhatsAppService {
     }
 
     return '';
+  }
+
+  isAudioMessage(message) {
+    return message?.type === 'audio' && Boolean(message.audio?.id);
+  }
+
+  getUnsupportedMessageReply(message) {
+    if (this.isAudioMessage(message)) {
+      return 'I can process voice notes, but audio transcription is not configured right now. Please send your message as text or configure OPENAI_API_KEY on the backend.';
+    }
+
+    return 'Please send a text message or voice note. Other WhatsApp message types are not supported yet.';
+  }
+
+  async downloadAudioMedia(mediaId) {
+    if (!this.isConfigured()) {
+      throw new Error('WhatsApp Cloud API is not configured.');
+    }
+
+    const metadataResponse = await fetch(
+      `https://graph.facebook.com/${DEFAULT_GRAPH_API_VERSION}/${mediaId}`,
+      {
+        headers: {
+          Authorization: `Bearer ${process.env.WHATSAPP_ACCESS_TOKEN}`
+        }
+      }
+    );
+
+    if (!metadataResponse.ok) {
+      const errorBody = await metadataResponse.text();
+      throw new Error(`WhatsApp media lookup failed: ${metadataResponse.status} ${errorBody}`);
+    }
+
+    const metadata = await metadataResponse.json();
+    const mediaResponse = await fetch(metadata.url, {
+      headers: {
+        Authorization: `Bearer ${process.env.WHATSAPP_ACCESS_TOKEN}`
+      }
+    });
+
+    if (!mediaResponse.ok) {
+      const errorBody = await mediaResponse.text();
+      throw new Error(`WhatsApp media download failed: ${mediaResponse.status} ${errorBody}`);
+    }
+
+    const arrayBuffer = await mediaResponse.arrayBuffer();
+    const mimeType = metadata.mime_type || mediaResponse.headers.get('content-type') || 'audio/ogg';
+    const extension = MIME_TYPE_EXTENSIONS[mimeType] || 'ogg';
+
+    return {
+      buffer: Buffer.from(arrayBuffer),
+      mimeType,
+      filename: `voice-note.${extension}`
+    };
   }
 
   async sendTextMessage(to, body) {
